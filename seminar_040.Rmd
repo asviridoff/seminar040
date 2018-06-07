@@ -364,6 +364,8 @@ protein_pca <- prcomp(protein_no_country)
 protein_pca
 ```
 
+Привет!
+
 Посмотрим, что лежит в этом списке!
 
 ```{r}
