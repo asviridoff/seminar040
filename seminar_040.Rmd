@@ -47,7 +47,7 @@ library(patchwork) # удобное расположение графиков р
 В наборе данных для каждой страны указано, сколько белка получает ежедневно житель из различных продуктов.
 
 ```{r}
-protein <- import('Europenaprotein.csv')
+protein <- import('data/Europenaprotein.csv')
 skim(protein)
 ```
 
@@ -71,6 +71,7 @@ protein_no_country <- protein %>%
 Сохраним результат кластеризации в список `k_means_protein`.
 
 ```{r}
+set.seet(13)
 k_means_protein <- kmeans(protein_no_country, centers = 3)
 k_means_protein
 ```
